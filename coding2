@@ -1,19 +1,33 @@
 package quiz2;
+
+
 import java.util.Scanner;
+
 public class printArrayInStars {
+
 	public static void main(String[] args) {
-		Scanner scan=new Scanner(System.in);
+		
+		
+		Scanner scan = new Scanner(System.in);
+		
 		int NUM_ITEMS;
+		System.out.print("Enter the number of items : ");
+		NUM_ITEMS= scan.nextInt();
+		int array[] = new int[NUM_ITEMS];
 		
-		System.out.println("Enter the number of items: ");
-		NUM_ITEMS=scan.nextInt();
+		System.out.print("Enter the value of all items ");
+		for(int i = 0; i<array.length; i++)
+		{
+			array[i]=scan.nextInt();
+		}
 		
-		System.out.println("Enter the value of all items (separated by space): ");
-		String inputString = scan.nextLine();
-        String stringArray[] = inputString.split(" ");
-        int items[] = new int[NUM_ITEMS];
-        for (int i = 0; i < items.length; i++) {
-              items[i] = Integer.parseInt(stringArray[i]);
-        }
+		for(int i=0; i<array.length;i++) {
+			int x = array[i] - 1;
+			for(int print=0; print<=x;print++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
 
 }
