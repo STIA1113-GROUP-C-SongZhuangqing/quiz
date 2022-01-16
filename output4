@@ -1,0 +1,13 @@
+Enter the first student's mark(0-100):
+56
+Enter the second student's mark(0-100):
+101
+Invalid input, try again...
+Enter the second student's mark(0-100):
+-1
+Invalid input, try again...
+Enter the second student's mark(0-100):
+99
+Enter the third student's mark(0-100):
+45
+66.67
