@@ -1,0 +1,48 @@
+package quiz2;
+import java.util.Scanner;
+public class one {
+	public static void main(String[] args) {
+	Scanner scan=new Scanner(System.in);
+	double wage,wage1,wage2,wage3;
+	int year,year1,year2,year3;
+	double bonus;
+	System.out.println("Please your wage: ");
+	wage=scan.nextDouble();
+	System.out.println("Please your year of service: ");
+	year=scan.nextInt();
+	if(year>5) {
+		bonus=1.05*wage;
+		System.out.println("Bonus is: "+bonus);
+	}else {
+		System.out.println("NO bonus ");
+	}
+	System.out.println("Please your wage: ");
+	wage1=scan.nextDouble();
+	System.out.println("Please your year of service: ");
+	year1=scan.nextInt();
+	System.out.println("Please your wage: ");
+	wage2=scan.nextDouble();
+	System.out.println("Please your year of service: ");
+	year2=scan.nextInt();
+	System.out.println("Please your wage: ");
+	wage3=scan.nextDouble();
+	System.out.println("Please your year of service: ");
+	year3=scan.nextInt();
+	if(wage1>wage2&&wage1>wage3) {
+		System.out.println(wage1);
+	}
+	else if(wage2>wage1&&wage2>wage3){
+		System.out.println(wage2);
+	}else if(wage3>wage1&&wage3>wage2){
+		System.out.println(wage3);
+	}
+	if(year1>year2&&year1>year3) {
+		System.out.println(year1);
+	}
+	else if(year2>year1&&year2>year3){
+		System.out.println(year2);
+	}else if(year3>year1&&year3>year2){
+		System.out.println(year3);
+	}
+	}
+}
