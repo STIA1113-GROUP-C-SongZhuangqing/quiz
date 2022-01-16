@@ -1,0 +1,39 @@
+package quiz2;
+import java.util.Scanner;
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+public class grade {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		double m1,m2,m3;
+		double average;
+		System.out.print("Enter the first student's mark(0-100):\n");
+		m1=scan.nextInt();
+		while(m1>100^m1<0) {
+			System.out.print("Invalid input, try again...\n");
+			System.out.print("Enter the first student's mark(0-100):\n");
+			m1=scan.nextInt();
+			
+		}
+		System.out.print("Enter the second student's mark(0-100):\n");
+		m2=scan.nextInt();
+		while(m2>100^m2<0) {
+			System.out.print("Invalid input, try again...\n");
+			System.out.print("Enter the second student's mark(0-100):\n");
+			m2=scan.nextInt();
+			
+			}
+		System.out.print("Enter the third student's mark(0-100):\n");
+		m3=scan.nextInt();
+		while(m3>100^m3<0) {
+			System.out.print("Invalid input, try again...\n");
+			System.out.print("Enter the third student's mark(0-100):\n");
+			m3=scan.nextInt();
+			}
+		average=(m1+m2+m3)/3;
+		DecimalFormat df= new DecimalFormat(".00");
+		System.out.print(df.format(average));
+		
+		
+}
+}
