@@ -49,9 +49,9 @@ public class one {
       for (int i = 1; i < age.length; i++)
       {
          if(age[i] > oldest)
-             max = age[i];
+             oldest = age[i];
          if(age[i] < youngest)
-             min = age[i];
+             youngest = age[i];
       }
 
       System.out.println("Oldest: " + oldest); 
